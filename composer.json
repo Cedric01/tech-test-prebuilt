@@ -1,0 +1,13 @@
+{
+    "name": "skybet/tech-test",
+    "description": "Sky Betting & Gaming Technical Test",
+    "require": {
+        "slim/slim": "^3.3",
+        "slim/twig-view": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skybet\\": "src"
+        }
+    }
+}
