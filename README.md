@@ -9,7 +9,7 @@ We hope that you find this exercise fun. There are no trick questions; we want t
 
 ## The Brief
 
-The aim of this exercise is to create a server-side form handler to load and save data using the provided base application.
+The aim of this exercise is to create a server-side form handler to load and save data using the provided base application. If you'd prefer to write your application in another language, please feel free to do so.
 
 The main functionality required is a simple update capability against the existing records. Other CRUD functions could be added if you have time. In order to validate this functionality, you could include some tests.
 
