@@ -17,5 +17,11 @@ class PeopleController extends BaseController {
      * Update the list of people
      */
     public function update() {
+        $data = $this->load($people);
+        
+        if(isset($_Post['people']))
+        {
+            $data->
+        }
     }
 }
