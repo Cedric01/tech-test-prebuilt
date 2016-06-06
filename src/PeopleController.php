@@ -17,5 +17,27 @@ class PeopleController extends BaseController {
      * Update the list of people
      */
     public function update() {
+        $data = $this->load($people);
+        
+        if(isset($_Post['people']))
+        {
+            $data->attributes=$_Post['people'];
+            if($data->save())
+            $this->redirect(array('view'=>$data->firstname,lastname));
+        }
+        
+        $this->render('update',array('data'=>$data,));
+    }
+    
+    public function create(){
+        $data=new $people;
+        if(isset($_Post['people']))
+        {
+            $data->attributes=$_Post['people'];
+            if($data->save())
+            $data->password=crypt($data->password,'$6rounds=1212$16charactersaltt');
+            $this->redirect(array('view'=>$data->firstname,lastname))
+        }
+        $this->render('update',array('data'=>$data,));
     }
 }
